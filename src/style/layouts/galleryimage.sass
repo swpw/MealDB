@@ -1,0 +1,22 @@
+.galleryImage
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  +e('img')
+    width: 200px
+    height: 200px
+    margin-bottom: 30px
+    cursor: pointer
+    +max(424)
+      width: 150px
+      height: 150px
+
+  +e('text')
+    font-family: $font2
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    color: $color2
+    text-align: center
+    line-height: 1.5em

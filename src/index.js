@@ -5,7 +5,7 @@ import 'regenerator-runtime/runtime'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './components/App'
+import App from './js/App'
 
 if (module.hot) module.hot.accept()
 

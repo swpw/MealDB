@@ -1,0 +1,35 @@
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  +m('mini')
+    cursor: default
+  +m('footer')
+    cursor: default
+
+  +e('img')
+    width: 44px
+    height: 44px
+    +max(549)
+      width: 34px
+      height: 34px
+    +m('mini')
+      width: 20px
+      height: 20px
+    +m('footer')
+      width: 26px
+      height: 26px
+      
+  +e('text')
+    font-family: $font1
+    font-style: italic
+    font-weight: 400
+    font-size: 30px
+    color: $color3
+    +max(549)
+      font-size: 23px
+    +m('mini')
+      font-size: 14px
+    +m('footer')
+      font-size: 18px

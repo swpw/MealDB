@@ -1,0 +1,68 @@
+.header
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 200px
+  +max(1023)
+    flex-direction: column
+    margin-top: 120px
+  
+  +e('blob2')
+    position: absolute
+    top: 150px
+    right: 0
+    z-index: -1
+    width: 550px
+    +max(1023)
+      top: 350px
+      width: 400px
+    +max(768)
+      width: 300px
+    +max(549)
+      width: 250px
+
+  +e('content')
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-right: 60px
+    +max(1023)
+      margin-right: 0
+      margin-top: 60px
+      align-items: center
+
+  +e('heading')
+    font-family: $font1
+    font-weight: 400
+    font-size: 48px
+    color: $color3
+    +max(1399)
+      font-size: 40px
+    +max(1139)
+      font-size: 34px
+    +max(1023)
+      font-size: 40px
+      text-align: center
+    +max(549)
+      font-size: 34px
+    +max(424)
+      font-size: 30px
+    +max(374)
+      font-size: 25px
+      
+  +e('description')
+    font-family: $font2
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    color: $color2
+    line-height: 1.75em
+    margin-top: 45px
+    margin-bottom: 15px
+    +max(1023)
+      text-align: center
+    +max(424)
+      margin-top: 30px
+      font-size: 16px
+    +max(374)
+      font-size: 14px

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap') 
+
 =e($element)
   &__#{$element}
     @content
@@ -14,8 +17,38 @@
   @media (max-width: #{$size + px})
     @content
 
+$font1: 'Shrikhand', cursive
+$font2: 'Krub', sans-serif
+
+$color1: #ffffff
+$color2: #333333
+$color3: #EC5B5B
+$color3-opacity05: #ec5b5b50
+$color4: #FCEA8A
+
+$color5: #555555
+$color6: #f0f0f0
+
 @import ./default/reset.sass
 @import ./default/normalize.sass
 
 @import ./layouts/default.sass
-  
+@import ./layouts/logo.sass
+@import ./layouts/menuBtn.sass
+@import ./layouts/menu.sass
+@import ./layouts/nav.sass
+@import ./layouts/searchbar.sass
+@import ./layouts/header.sass
+@import ./layouts/randommeals.sass
+@import ./layouts/randomingredients.sass
+@import ./layouts/sectioncontent.sass
+@import ./layouts/footer.sass
+@import ./layouts/galleryimage.sass
+@import ./layouts/searchresults.sass
+@import ./layouts/meals.sass
+@import ./layouts/mealsdictionary.sass
+@import ./layouts/mealspreview.sass
+@import ./layouts/ingredients.sass
+@import ./layouts/allcategoriesresults.sass
+@import ./layouts/category.sass
+@import ./layouts/area.sass

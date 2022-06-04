@@ -1,0 +1,52 @@
+.ingredientsPage
+  display: grid
+  grid-template-columns: repeat(6, auto)
+  grid-row-gap: 90px
+  margin-top: 120px
+  width: 100%
+  max-width: 1440px
+  +max(1599)
+    grid-template-columns: repeat(4, auto)
+    max-width: 1140px
+  +max(1023)
+    grid-template-columns: repeat(3, auto)
+    grid-row-gap: 75px
+  +max(767)
+    grid-template-columns: repeat(2, auto)
+    grid-row-gap: 60px
+  +e('element')
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-decoration: none
+  +e('img')
+    width: 100px
+    height: 100px
+    +max(549)
+      width: 75px
+      height: 75px
+  +e('text')
+    text-align: center
+    font-family: $font2
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    color: $color2
+    margin-top: 15px
+    +max(549)
+    font-size: 16px
+  +e('button')
+    width: 215px
+    font-family: $font1
+    font-weight: 400
+    font-size: 16px
+    color: $color3
+    border: none
+    border-bottom: 2px solid $color3
+    background: transparent
+    margin-top: 90px
+    cursor: pointer
+  +e('outer-wrapper')
+    display: flex
+    flex-direction: column
+    align-items: center

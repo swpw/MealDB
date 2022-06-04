@@ -1,0 +1,31 @@
+.searchresults
+  position: absolute
+  background: $color1
+  box-shadow: -1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+  border-radius: 8px
+  padding: 3px
+  +m('nav')
+    width: calc( 100% - 30px )
+    +max(1023)
+      display: none
+  +m('header')
+    width: 100%
+  +m('disable')
+    display: none
+
+  +e('text')
+    font-family: $font2
+    font-style: italic
+    color: $color5
+    padding: 0 15px
+    height: 35px
+    cursor: pointer
+    margin-bottom: 5px
+    border-radius: 8px
+    display: flex
+    align-items: center
+    &:hover
+      font-weight: 600
+      background: $color6
+    &:last-of-type
+      margin-bottom: 0

@@ -1,0 +1,50 @@
+.categoryPage
+  margin-top: 120px
+
+  +e('element')
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 90px
+    &:last-of-type
+      margin-bottom: 0
+
+  +e('img')
+    width: 320px
+    height: 200px
+    +max(767)
+      width: 256px
+      height: 160px
+    +max(424)
+      width: 224px
+      height: 140px
+  
+  +e('title')
+    font-family: $font1
+    font-weight: 400
+    font-size: 34px
+    color: $color3
+    margin-top: 30px
+    margin-bottom: 15px
+    +max(767)
+      font-size: 30px    
+
+  +e('description')
+    font-family: $font2
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 41px
+    color: $color2
+    width: 80%
+    max-width: 1024px
+    text-align: center
+    +max(767)
+      font-size: 16px
+      line-height: 36px
+    +max(424)
+      font-size: 14px
+      line-height: 32px
+
+  +e('link')
+    margin-top: 15px

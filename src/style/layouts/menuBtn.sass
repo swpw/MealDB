@@ -1,0 +1,30 @@
+.menuBtn
+  width: 35px
+  height: 20px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  cursor: pointer
+  z-index: 3
+  +max(549)
+    width: 30px
+    height: 15px
+  
+  +e('el')
+    width: inherit
+    height: 4px
+    background: $color3
+    +max(549)
+      height: 3px
+    +m('close')
+        &:nth-of-type(1)
+          transform: rotate(45deg) translate(7px, 5px)
+          +max(549)
+            transform: rotate(45deg) translate(5px, 4px)
+        &:nth-of-type(2)
+          display: none
+        &:nth-of-type(3)
+          transform: rotate(-45deg) translate(5px, -5px)
+          +max(549)
+            transform: rotate(-45deg) translate(4px, -4px)
+
